@@ -5,9 +5,17 @@ Axiom Blog is a blogging application that is both an appliction to use for blogg
 
 
 Usage:
-----------------------------------------
+-----------------------------------------
 
 To use Axiom Blog, grab thet source, and then place it in your <apps> directory.
 Upon startup you should be able to goto http://localhost:8080/blog
 
 To manage the blog go to: http://localhost:8080/blog/manage
+
+
+Credits:
+-----------------------------------------
+
+Hassan Riaz
+Thomas Mayfield
+Jeremy Brown
