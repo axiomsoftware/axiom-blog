@@ -29,5 +29,6 @@ function onStart(){
 	    post.body = new XHTML("<div><p>Welcome to my new blog.</p><blockquote>This is the first post on the blog.</blockquote><p>Be sure to head on back for more!</p></div>");
 	    post.date = new Date();
 	    post.published = true;
+	    post.author = new Reference(defuser);
 	}
 }
