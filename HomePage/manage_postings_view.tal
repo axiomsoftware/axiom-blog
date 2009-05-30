@@ -67,8 +67,8 @@
 			<span tal:replace="pagination" />
 		</form>
 		<div tal:if="posts.length == 0" class="noresults">
-			<p tal:if="view == 'Drafts' &amp;&amp; query == null">There are currently no Drafts.</p>
-			<p tal:if="view == 'Published' || view == 'All' &amp;&amp; query == null">There are currently no Postings.</p>
+			<p tal:if="view == 'Drafts' && query == null">There are currently no Drafts.</p>
+			<p tal:if="view == 'Published' || view == 'All' && query == null">There are currently no Postings.</p>
 			<p tal:if="query != null">Your search produced no results.</p>
 		</div>
 	</div> 

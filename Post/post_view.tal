@@ -15,8 +15,8 @@
 		<h2 class="comment_hdr">Comments (<span tal:content="this.approved_comments_count()"></span>)</h2>
 		<ul class="comments">
 			<li tal:repeat="comment: this.approved_comments()">
-				<span tal:if="check_setting('comment_email_links',true) &amp;&amp; comment.comment_type == 'Anonymous'">Added By <a tal:attr="href: 'mailto:' + comment.email" tal:content="comment.name"></a>  at <span tal:replace="comment.date.formatted()"/></span>
-				<span tal:if="check_setting('comment_email_links',false) &amp;&amp; comment.comment_type == 'Anonymous'" tal:content="'Added By ' + comment.name + ' at ' + comment.date.formatted()"></span>
+				<span tal:if="check_setting('comment_email_links',true) && comment.comment_type == 'Anonymous'">Added By <a tal:attr="href: 'mailto:' + comment.email" tal:content="comment.name"></a>  at <span tal:replace="comment.date.formatted()"/></span>
+				<span tal:if="check_setting('comment_email_links',false) && comment.comment_type == 'Anonymous'" tal:content="'Added By ' + comment.name + ' at ' + comment.date.formatted()"></span>
 				<span tal:if="comment.comment_type == 'OpenID'">Added By <img tal:attr="src: app.getStaticMountpoint('images/openid-logo.gif')" alt="OpenID" /> <a tal:attr="href:comment.openid_identifier" tal:content="comment.openid_identifier"></a> at <span tal:replace="comment.date.formatted()"/></span>
 				<p tal:content="comment.body"></p>
 			</li>

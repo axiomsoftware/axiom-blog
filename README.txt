@@ -12,6 +12,11 @@ Upon startup you should be able to goto http://localhost:8080/blog
 
 To manage the blog go to: http://localhost:8080/blog/manage
 
+The initial account is:
+Login: admin
+Password: password
+
+Be sure to change this when you first login.
 
 Credits:
 -----------------------------------------

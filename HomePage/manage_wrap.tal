@@ -25,11 +25,11 @@
 					<li tal:if="action == 'manage'" class="curr">Overview</li>
 					<li tal:if="action != 'manage'"><a tal:attr="href: this.getURI('manage')">Overview</a></li>
 					<li tal:if="action == 'edit_posting' || action == 'manage_postings' || action == 'manage_whitelist' || action == 'manage_categories'" class="curr">Postings</li>
-					<li tal:if="action != 'edit_posting' &amp;&amp; action != 'manage_postings' &amp;&amp; action != 'manage_whitelist' &amp;&amp; action != 'manage_categories'"><a tal:attr="href: this.getURI('manage_postings')">Postings</a></li>
-					<li tal:if="action == 'manage_authors' &amp;&amp; session.user.is_admin()" class="curr">Authors</li>
-					<li tal:if="action != 'manage_authors' &amp;&amp; session.user.is_admin()"><a tal:attr="href: this.getURI('manage_authors')">Authors</a></li>
-					<li tal:if="(action == 'manage_settings' || action == 'manage_templates') &amp;&amp; session.user.is_admin()" class="curr">Blog Settings</li>
-					<li tal:if="action != 'manage_settings' &amp;&amp; action != 'manage_templates' &amp;&amp; session.user.is_admin()"><a tal:attr="href: this.getURI('manage_settings')">Blog Settings</a></li>
+					<li tal:if="action != 'edit_posting' && action != 'manage_postings' && action != 'manage_whitelist' && action != 'manage_categories'"><a tal:attr="href: this.getURI('manage_postings')">Postings</a></li>
+					<li tal:if="action == 'manage_authors' && session.user.is_admin()" class="curr">Authors</li>
+					<li tal:if="action != 'manage_authors' && session.user.is_admin()"><a tal:attr="href: this.getURI('manage_authors')">Authors</a></li>
+					<li tal:if="(action == 'manage_settings' || action == 'manage_templates') && session.user.is_admin()" class="curr">Blog Settings</li>
+					<li tal:if="action != 'manage_settings' && action != 'manage_templates' && session.user.is_admin()"><a tal:attr="href: this.getURI('manage_settings')">Blog Settings</a></li>
 					<li class="last"><a tal:attr="href: this.getURI()">View Blog</a></li>
 				</ul>
 			</div>
